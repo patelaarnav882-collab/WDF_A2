@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentHub student login page">
+    <title>Student Login | StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Practical 4: restore saved theme before first paint -->
+    <script>try{var s=localStorage.getItem("studentHubTheme");if(s==="dark"){document.body.classList.add("dark-mode");}}catch(e){}</script>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+    <div class="container">
+
+        <div class="brand">
+            <img src="../images/logo.png" alt="StudentHub logo">
+            <h1>StudentHub</h1>
+        </div>
+
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">🌙</span><span class="theme-label visually-hidden">Dark mode</span></button>
+
+        <nav id="mainNav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" aria-current="page">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="main">
+
+    <section class="section">
+        <div class="container">
+
+            <div class="form-card">
+
+                <h2>Student Login</h2>
+
+                <p>
+                    Login to access your StudentHub dashboard.
+                </p>
+
+                <!-- Practical 10: POSTs to the secure login handler -->
+                <form action="../php/login.php" method="post" novalidate>
+
+                    <input type="hidden" name="login_page" value="student">
+
+                    <!-- Server messages (invalid / expired / login needed) -->
+                    <p
+                        class="data-status"
+                        id="loginStatus"
+                        role="alert"
+                        hidden
+                    ></p>
+
+                    <div class="form-group">
+                        <label for="student-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="student-email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="student-password">Password</label>
+                        <input
+                            type="password"
+                            id="student-password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="remember-option">
+                        <input
+                            type="checkbox"
+                            id="student-remember"
+                            name="remember"
+                            value="1"
+                        >
+                        <label for="student-remember">Remember me</label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">
+                            Login
+                        </button>
+                    </div>
+
+                </form>
+
+
+                <p>
+                    Don't have an account?
+                    <a href="register.html">Register here</a>
+                </p>
+
+                <p>
+                    <a href="login.html">← Back to Login Options</a>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
