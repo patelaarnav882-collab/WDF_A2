@@ -1,0 +1,18 @@
+[
+  { "id": "STU2026001", "name": "Aarav Patel", "course": "B.Tech", "year": 3, "department": "Computer Engineering", "email": "aarav.p@studenthub.example", "status": "Active" },
+  { "id": "STU2026002", "name": "Diya Shah", "course": "BCA", "year": 2, "department": "Computer Applications", "email": "diya.s@studenthub.example", "status": "Active" },
+  { "id": "STU2026003", "name": "Kabir Mehta", "course": "BBA", "year": 1, "department": "Management Studies", "email": "kabir.m@studenthub.example", "status": "Active" },
+  { "id": "STU2026004", "name": "Ananya Iyer", "course": "B.Sc", "year": 3, "department": "Physics", "email": "ananya.i@studenthub.example", "status": "Active" },
+  { "id": "STU2026005", "name": "Vivaan Rao", "course": "B.Tech", "year": 4, "department": "Mechanical Engineering", "email": "vivaan.r@studenthub.example", "status": "Inactive" },
+  { "id": "STU2026006", "name": "Ishita Nair", "course": "B.Com", "year": 2, "department": "Commerce", "email": "ishita.n@studenthub.example", "status": "Active" },
+  { "id": "STU2026007", "name": "Arjun Desai", "course": "BCA", "year": 3, "department": "Computer Applications", "email": "arjun.d@studenthub.example", "status": "Active" },
+  { "id": "STU2026008", "name": "Meera Joshi", "course": "BBA", "year": 2, "department": "Management Studies", "email": "meera.j@studenthub.example", "status": "Active" },
+  { "id": "STU2026009", "name": "Rohan Kulkarni", "course": "B.Tech", "year": 1, "department": "Civil Engineering", "email": "rohan.k@studenthub.example", "status": "Active" },
+  { "id": "STU2026010", "name": "Sanya Kapoor", "course": "B.Sc", "year": 1, "department": "Chemistry", "email": "sanya.k@studenthub.example", "status": "Active" },
+  { "id": "STU2026011", "name": "Aditya Menon", "course": "B.Tech", "year": 2, "department": "Electrical Engineering", "email": "aditya.m@studenthub.example", "status": "Active" },
+  { "id": "STU2026012", "name": "Navya Reddy", "course": "B.Com", "year": 3, "department": "Commerce", "email": "navya.r@studenthub.example", "status": "Inactive" },
+  { "id": "STU2026013", "name": "Krishna Pillai", "course": "BCA", "year": 1, "department": "Computer Applications", "email": "krishna.p@studenthub.example", "status": "Active" },
+  { "id": "STU2026014", "name": "Pooja Sharma", "course": "BBA", "year": 3, "department": "Management Studies", "email": "pooja.s@studenthub.example", "status": "Active" },
+  { "id": "STU2026015", "name": "Yash Thakur", "course": "B.Tech", "year": 3, "department": "Computer Engineering", "email": "yash.t@studenthub.example", "status": "Active" },
+  { "id": "STU2026016", "name": "Riya Verma", "course": "B.Sc", "year": 4, "department": "Mathematics", "email": "riya.v@studenthub.example", "status": "Active" }
+]

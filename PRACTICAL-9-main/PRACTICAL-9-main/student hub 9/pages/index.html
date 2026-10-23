@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | StudentHub</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Practical 4: restore saved theme before first paint -->
+    <script>try{var s=localStorage.getItem("studentHubTheme");if(s==="dark"){document.body.classList.add("dark-mode");}}catch(e){}</script>
+
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <header class="site-header">
+
+        <div class="container">
+
+            <!-- Logo and website name -->
+            <div class="brand">
+
+                <img
+                    src="../images/logo.png"
+                    alt="StudentHub logo"
+                >
+
+                <h1>StudentHub</h1>
+
+            </div>
+
+
+            <!-- =================================================
+                 PRACTICAL 4 - HAMBURGER MENU
+                 ================================================= -->
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav"
+            >
+                ☰
+            </button>
+
+
+            <!-- =================================================
+                 PRACTICAL 4 - LIGHT / DARK THEME SWITCHER
+                 ================================================= -->
+            <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Switch to dark mode"
+                title="Switch to dark mode"
+            >
+                <span class="theme-icon" aria-hidden="true">🌙</span><span class="theme-label visually-hidden">Dark mode</span>
+            </button>
+
+
+            <!-- Main navigation -->
+            <nav
+                aria-label="Main navigation"
+                id="mainNav"
+            >
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main id="main">
+
+
+        <!-- =====================================================
+             PRACTICAL 4 - NOTIFICATION BANNER
+             ===================================================== -->
+        <div
+            class="notification-banner"
+            id="notificationBanner"
+        >
+
+            <div class="container notification-content">
+
+                <p>
+                    🔔 Welcome to StudentHub! Check out the latest
+                    campus events and student updates.
+                </p>
+
+                <button
+                    type="button"
+                    class="notification-close"
+                    id="notificationClose"
+                    aria-label="Close notification"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             1. HERO SECTION
+             ===================================================== -->
+        <section class="hero section">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        WELCOME TO STUDENTHUB
+                    </p>
+
+                    <h2>
+                        YOUR CAMPUS. YOUR COMMUNITY. YOUR HUB.
+                    </h2>
+
+                    <p class="hero-description">
+                        Stay connected with events, student services,
+                        and everything you need for your college journey.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="register.html" class="btn">
+                            Explore StudentHub
+                        </a>
+
+                        <a href="events.html" class="btn btn-outline">
+                            Discover Events
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             2. ABOUT STUDENTHUB
+             ===================================================== -->
+        <section class="section about-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    ABOUT STUDENTHUB
+                </p>
+
+                <h2>
+                    Everything Students Need, In One Place
+                </h2>
+
+
+                <div class="about-content">
+
+                    <div class="about-image">
+
+                        <img
+                            src="../images/logo.png"
+                            alt="StudentHub logo representing the student portal"
+                        >
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <h3>
+                            Built for Student Life
+                        </h3>
+
+                        <p>
+                            StudentHub is a college student portal designed
+                            to bring important student information and
+                            campus activities together in one convenient place.
+                        </p>
+
+                        <p>
+                            Students can discover upcoming events, find useful
+                            resources, access support information, and stay
+                            connected with campus life.
+                        </p>
+
+                        <a href="about.html" class="text-link">
+                            Learn More About StudentHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             3. LATEST UPDATES
+             ===================================================== -->
+        <section class="section updates-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    STAY INFORMED
+                </p>
+
+                <h2>
+                    Latest Updates
+                </h2>
+
+
+                <div class="card-grid">
+
+                    <article class="card update-card">
+
+                        <span class="card-label">
+                            StudentHub
+                        </span>
+
+                        <h3>
+                            Welcome to StudentHub
+                        </h3>
+
+                        <p>
+                            StudentHub brings important student information,
+                            campus services and useful resources together
+                            in one convenient place.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card update-card">
+
+                        <span class="card-label">
+                            Getting Started
+                        </span>
+
+                        <h3>
+                            Create Your Account
+                        </h3>
+
+                        <p>
+                            New students can register on StudentHub and
+                            begin exploring the portal and its available
+                            student resources.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card update-card">
+
+                        <span class="card-label">
+                            Student Support
+                        </span>
+
+                        <h3>
+                            Help Is Available
+                        </h3>
+
+                        <p>
+                            Have a question? Visit the FAQ section or
+                            contact the StudentHub support team for help.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             4. STUDENT SERVICES
+             ===================================================== -->
+        <section class="section services-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    STUDENT SERVICES
+                </p>
+
+                <h2>
+                    Everything You Need for College Life
+                </h2>
+
+
+                <div class="card-grid">
+
+                    <article class="card service-card">
+
+                        <div class="service-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Campus Events
+                        </h3>
+
+                        <p>
+                            Discover college events, workshops,
+                            festivals, sports and other activities.
+                        </p>
+
+                        <a href="events.html" class="text-link">
+                            Explore Events
+                        </a>
+
+                    </article>
+
+
+                    <article class="card service-card">
+
+                        <div class="service-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Student Resources
+                        </h3>
+
+                        <p>
+                            Find useful academic information,
+                            student resources and helpful links
+                            for your college journey.
+                        </p>
+
+                        <a href="about.html" class="text-link">
+                            Explore Resources
+                        </a>
+
+                    </article>
+
+
+                    <article class="card service-card">
+
+                        <div class="service-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Student Support
+                        </h3>
+
+                        <p>
+                            Find answers and reach support through
+                            FAQ, contact and feedback resources.
+                        </p>
+
+                        <a href="faq.html" class="text-link">
+                            Get Support
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             5. UPCOMING EVENTS
+             ===================================================== -->
+        <section class="section events-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    DON'T MISS OUT
+                </p>
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+
+                <div class="card-grid">
+
+                    <article class="card event-card">
+
+                        <h3>
+                            Cultural Festival
+                        </h3>
+
+                        <p class="event-date">
+                            <time datetime="2026-11-15">
+                                15 November 2026
+                            </time>
+                        </p>
+
+                        <p class="event-location">
+                            College Auditorium
+                        </p>
+
+                        <p>
+                            Join us for music, dance and cultural activities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card event-card">
+
+                        <h3>
+                            Technical Workshop
+                        </h3>
+
+                        <p class="event-date">
+                            <time datetime="2026-11-20">
+                                20 November 2026
+                            </time>
+                        </p>
+
+                        <p class="event-location">
+                            Computer Lab
+                        </p>
+
+                        <p>
+                            Learn about new technologies and practical skills.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card event-card">
+
+                        <h3>
+                            Sports Day
+                        </h3>
+
+                        <p class="event-date">
+                            <time datetime="2026-12-05">
+                                5 December 2026
+                            </time>
+                        </p>
+
+                        <p class="event-location">
+                            College Ground
+                        </p>
+
+                        <p>
+                            Participate in different sports and fun activities.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="section-link">
+
+                    <a href="events.html" class="btn btn-outline">
+                        View All Events
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             6. WHY STUDENTHUB
+             ===================================================== -->
+        <section class="section why-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    WHY STUDENTHUB?
+                </p>
+
+                <h2>
+                    Made to Make Student Life Easier
+                </h2>
+
+
+                <div class="why-content">
+
+                    <div>
+
+                        <h3>
+                            One Simple Student Portal
+                        </h3>
+
+                        <p>
+                            StudentHub brings useful student resources,
+                            campus activities and support information
+                            together in one place.
+                        </p>
+
+                    </div>
+
+
+                    <ul class="benefit-list">
+
+                        <li>
+                            Easy access to student information
+                        </li>
+
+                        <li>
+                            Discover college events and activities
+                        </li>
+
+                        <li>
+                            Stay updated with important information
+                        </li>
+
+                        <li>
+                            Find student support quickly
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             7. STUDENT VOICES - CONTENT SLIDER
+             ===================================================== -->
+        <section class="section testimonial-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    STUDENT VOICES
+                </p>
+
+                <h2>
+                    What Students Say
+                </h2>
+
+
+                <div
+                    class="content-slider"
+                    aria-label="StudentHub student testimonials"
+                >
+
+                    <div class="slider-content">
+
+                        <article class="slide active-slide">
+
+                            <p class="quote">
+                                "StudentHub makes it easier to stay connected
+                                with campus activities and student resources."
+                            </p>
+
+                            <p class="student-name">
+                                — StudentHub Student
+                            </p>
+
+                        </article>
+
+
+                        <article class="slide">
+
+                            <p class="quote">
+                                "I can quickly find important information
+                                about events and student services."
+                            </p>
+
+                            <p class="student-name">
+                                — Computer Science Student
+                            </p>
+
+                        </article>
+
+
+                        <article class="slide">
+
+                            <p class="quote">
+                                "StudentHub gives students one simple place
+                                to stay connected with college life."
+                            </p>
+
+                            <p class="student-name">
+                                — StudentHub Member
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="slider-controls">
+
+                        <button
+                            type="button"
+                            class="btn slider-prev"
+                            aria-label="Show previous student testimonial"
+                        >
+                            Previous
+                        </button>
+
+
+                        <span
+                            class="slider-status"
+                            aria-live="polite"
+                        >
+                            1 / 3
+                        </span>
+
+
+                        <button
+                            type="button"
+                            class="btn slider-next"
+                            aria-label="Show next student testimonial"
+                        >
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             8. CALL TO ACTION
+             ===================================================== -->
+        <section class="section cta-section">
+
+            <div class="container">
+
+                <h2>
+                    Ready to Get Started?
+                </h2>
+
+                <p>
+                    Join StudentHub and stay connected with your
+                    college journey.
+                </p>
+
+                <a href="register.html" class="btn">
+                    Register Now
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-column">
+
+                <h3>
+                    StudentHub
+                </h3>
+
+                <p>
+                    Your campus. Your community. Your hub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Student Support
+                </h3>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="feedback.html">
+                    Feedback
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 StudentHub
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript file -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
