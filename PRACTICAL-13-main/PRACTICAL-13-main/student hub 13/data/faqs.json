@@ -1,0 +1,18 @@
+[
+  { "id": 1, "question": "What is StudentHub?", "answer": "StudentHub is a college student portal designed to provide convenient access to campus information, events, resources and student support.", "category": "Getting Started" },
+  { "id": 2, "question": "Who can use StudentHub?", "answer": "StudentHub is designed for college students who want to stay connected with campus activities, information and student services.", "category": "Getting Started" },
+  { "id": 3, "question": "How do I create an account?", "answer": "You can create an account by visiting the Register page and providing the required information such as your name, email and course details.", "category": "Getting Started" },
+  { "id": 4, "question": "What information is needed for registration?", "answer": "Registration requires your full name, email address, mobile number, course, year of study, gender and acceptance of the terms and conditions.", "category": "Accounts" },
+  { "id": 5, "question": "I forgot my password. What should I do?", "answer": "Use the login page to reach the support team through the Contact page, and they will help you regain access to your account.", "category": "Accounts" },
+  { "id": 6, "question": "How do I update my profile details?", "answer": "After logging in, open your Profile page to view your details and follow the instructions there to request changes.", "category": "Accounts" },
+  { "id": 7, "question": "Where can I find upcoming events?", "answer": "All upcoming college events are listed on the Events page, where you can search by name, filter by category and sort by date.", "category": "Events" },
+  { "id": 8, "question": "How do I register for an event?", "answer": "Open the event details on the Events page and follow the instructions given in the event description.", "category": "Events" },
+  { "id": 9, "question": "Who should I contact about an event?", "answer": "Each event card shows its venue. For general questions, contact the StudentHub support team through the Contact page.", "category": "Events" },
+  { "id": 10, "question": "Where can I find study resources?", "answer": "Useful academic materials and links are collected on the Resources page, organised into academic, campus and support sections.", "category": "Academics" },
+  { "id": 11, "question": "How do I check my course schedule?", "answer": "Course schedules are shared by your department. StudentHub announcements highlight important academic dates.", "category": "Academics" },
+  { "id": 12, "question": "Does StudentHub work on mobile phones?", "answer": "Yes. StudentHub uses a responsive design that adapts to mobile phones, tablets and desktop computers.", "category": "Support" },
+  { "id": 13, "question": "How do I switch between light and dark mode?", "answer": "Use the moon and sun button in the website header. Your choice is remembered the next time you visit.", "category": "Support" },
+  { "id": 14, "question": "How do I give feedback about StudentHub?", "answer": "Share your suggestions through the Feedback page form. Your input helps improve the portal.", "category": "Support" },
+  { "id": 15, "question": "Is my personal information safe?", "answer": "This demo version stores nothing on a server. Registration validation happens only in your browser and no account data leaves your device.", "category": "Accounts" },
+  { "id": 16, "question": "Where can I see important announcements?", "answer": "Important campus announcements appear on the Announcements page and on your dashboard after logging in.", "category": "Getting Started" }
+]

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | StudentHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Practical 4: restore saved theme before first paint -->
+    <script>try{var s=localStorage.getItem("studentHubTheme");if(s==="dark"){document.body.classList.add("dark-mode");}}catch(e){}</script>
+
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#main" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="brand">
+
+                <img
+                    src="../images/logo.png"
+                    alt="StudentHub logo"
+                >
+
+                <h1>StudentHub</h1>
+
+            </div>
+
+
+
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">🌙</span><span class="theme-label visually-hidden">Dark mode</span></button>
+
+            <nav id="mainNav" aria-label="Main navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html" aria-current="page">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main id="main">
+
+
+        <!-- =====================================================
+             1. EVENTS HERO
+             ===================================================== -->
+        <section class="events-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    STUDENTHUB EVENTS
+                </p>
+
+                <h2>
+                    Discover What's Happening on Campus
+                </h2>
+
+                <p class="events-hero-text">
+                    Explore upcoming college events, workshops,
+                    cultural activities, sports and opportunities
+                    to connect with the student community.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             2. FEATURED EVENT
+             ===================================================== -->
+        <section class="section featured-event-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    FEATURED EVENT
+                </p>
+
+
+                <div class="featured-event">
+
+                    <div class="featured-event-content">
+
+                        <span class="event-badge">
+                            CULTURAL EVENT
+                        </span>
+
+                        <h2>
+                            Cultural Festival
+                        </h2>
+
+                        <p class="featured-date">
+
+                            <time datetime="2026-11-15">
+                                15 November 2026
+                            </time>
+
+                        </p>
+
+                        <p class="featured-location">
+                            College Auditorium
+                        </p>
+
+                        <p>
+                            Join us for music, dance and cultural
+                            activities and celebrate the creativity
+                            and diversity of our student community.
+                        </p>
+
+                        <button
+                            class="btn modal-open"
+                            type="button"
+                            data-title="Cultural Festival"
+                            data-content="Join us for music, dance and cultural activities at the College Auditorium on 15 November 2026. Celebrate creativity and diversity with the StudentHub community."
+                        >
+                            View Details
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-event-visual">
+
+                        <div class="event-visual-number">
+                            15
+                        </div>
+
+                        <p>
+                            NOVEMBER
+                        </p>
+
+                        <span>
+                            2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             3. UPCOMING EVENTS
+             ===================================================== -->
+        <section class="section upcoming-events-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    UPCOMING EVENTS
+                </p>
+
+                <h2>
+                    Don't Miss What's Happening
+                </h2>
+
+                <p>
+                    Browse the full event list below. Search,
+                    filter, sort and move between pages.
+                    Data loads from an external JSON file.
+                </p>
+
+
+                <!-- Practical 6: search, filter and sort controls -->
+                <div class="data-controls">
+
+                    <div class="data-control">
+                        <label for="eventSearch">
+                            Search events
+                        </label>
+                        <input
+                            type="search"
+                            id="eventSearch"
+                            name="event-search"
+                            placeholder="Search by title, venue or keyword"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="data-control">
+                        <label for="eventCategory">
+                            Category
+                        </label>
+                        <select id="eventCategory" name="event-category">
+                            <option value="">All categories</option>
+                        </select>
+                    </div>
+
+                    <div class="data-control">
+                        <label for="eventSort">
+                            Sort by
+                        </label>
+                        <select id="eventSort" name="event-sort">
+                            <option value="date-asc">Date: earliest first</option>
+                            <option value="date-desc">Date: latest first</option>
+                            <option value="title-az">Title: A to Z</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <p
+                    class="data-status"
+                    id="eventStatus"
+                    role="status"
+                    hidden
+                ></p>
+
+
+                <p
+                    class="data-count"
+                    id="eventCount"
+                    aria-live="polite"
+                ></p>
+
+
+                <!-- Practical 6: events render here from events.json -->
+                <div class="card-grid" id="eventGrid"></div>
+
+
+                <p
+                    class="data-empty"
+                    id="eventEmpty"
+                    role="status"
+                    hidden
+                >
+                    No events match your search. Try a
+                    different keyword or category.
+                </p>
+
+
+                <!-- Practical 6: pagination -->
+                <div class="pagination">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="eventPrev"
+                    >
+                        Previous
+                    </button>
+
+                    <span
+                        class="page-info"
+                        id="eventPageInfo"
+                        aria-live="polite"
+                    >
+                        Page 1 of 1
+                    </span>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="eventNext"
+                    >
+                        Next
+                    </button>
+
+                </div>
+
+                <!--
+                =====================================================
+                Previous static event cards were replaced by the
+                dynamic Practical 6 browser above. Featured event,
+                categories and modal popup are unchanged.
+                =====================================================
+                -->
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             4. EVENT CATEGORIES
+             ===================================================== -->
+        <section class="section categories-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    EXPLORE
+                </p>
+
+                <h2>
+                    Event Categories
+                </h2>
+
+
+                <div class="card-grid">
+
+
+                    <article class="category-card">
+
+                        <div class="category-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Cultural
+                        </h3>
+
+                        <p>
+                            Festivals, celebrations, music,
+                            dance and creative activities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="category-card">
+
+                        <div class="category-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Technical
+                        </h3>
+
+                        <p>
+                            Workshops, technology sessions and
+                            practical learning opportunities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="category-card">
+
+                        <div class="category-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Sports
+                        </h3>
+
+                        <p>
+                            Sports activities, competitions and
+                            opportunities to stay active.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             5. WHY JOIN EVENTS
+             ===================================================== -->
+        <section class="section why-events-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    GET INVOLVED
+                </p>
+
+                <h2>
+                    Why Join Campus Events?
+                </h2>
+
+
+                <div class="why-events-grid">
+
+
+                    <article class="why-event-item">
+
+                        <div class="why-event-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Connect
+                        </h3>
+
+                        <p>
+                            Meet students, build friendships and
+                            become part of the campus community.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-event-item">
+
+                        <div class="why-event-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Learn
+                        </h3>
+
+                        <p>
+                            Take part in workshops and activities
+                            that help develop practical skills.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-event-item">
+
+                        <div class="why-event-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Experience
+                        </h3>
+
+                        <p>
+                            Enjoy cultural, sports and student
+                            activities beyond the classroom.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             6. CALL TO ACTION
+             ===================================================== -->
+        <section class="section events-cta">
+
+            <div class="container">
+
+                <h2>
+                    Don't Miss What's Happening
+                </h2>
+
+                <p>
+                    Stay connected with StudentHub and discover
+                    your next opportunity on campus.
+                </p>
+
+
+                <div class="events-cta-buttons">
+
+                    <a href="index.html" class="btn">
+                        Explore StudentHub
+                    </a>
+
+                    <a href="register.html" class="btn btn-outline">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         MODAL POPUP
+         Practical 4
+         ===================================================== -->
+    <div
+        class="modal"
+        id="eventModal"
+        hidden
+    >
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                class="modal-close modal-close-icon"
+                type="button"
+                aria-label="Close event details"
+            >
+                &times;
+            </button>
+
+
+            <h2 id="modalTitle">
+                Event Details
+            </h2>
+
+
+            <p id="modalText">
+                Event information will appear here.
+            </p>
+
+
+            <button
+                class="btn modal-close"
+                type="button"
+            >
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    StudentHub
+                </h3>
+
+                <p>
+                    Your campus. Your community. Your hub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Student Support
+                </h3>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="feedback.html">
+                    Feedback
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 StudentHub
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Practical 4 JavaScript -->
+    <script src="../js/script.js"></script>
+    <!-- Practical 6: Fetch API data browser -->
+    <script src="../js/data.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+[
+  { "id": 1, "title": "Cultural Festival", "description": "Music, dance and cultural activities celebrating student creativity and diversity.", "date": "2026-11-15", "category": "Cultural", "location": "College Auditorium" },
+  { "id": 2, "title": "Technical Workshop", "description": "Hands-on session on new technologies and practical engineering skills.", "date": "2026-11-20", "category": "Technical", "location": "Computer Lab" },
+  { "id": 3, "title": "Sports Day", "description": "Athletics, team sports and fun fitness activities for all students.", "date": "2026-12-05", "category": "Sports", "location": "College Ground" },
+  { "id": 4, "title": "Student Community Meet", "description": "Meet fellow students, join clubs and take part in community activities.", "date": "2026-12-12", "category": "Community", "location": "Student Activity Centre" },
+  { "id": 5, "title": "Science Exhibition", "description": "Student projects and experiments displayed across science departments.", "date": "2026-12-19", "category": "Academic", "location": "Science Block" },
+  { "id": 6, "title": "Coding Hackathon", "description": "A 12-hour team coding challenge with mentoring from faculty members.", "date": "2027-01-09", "category": "Technical", "location": "Innovation Lab" },
+  { "id": 7, "title": "Winter Carnival", "description": "Food stalls, games and live performances to celebrate the winter season.", "date": "2027-01-16", "category": "Cultural", "location": "College Ground" },
+  { "id": 8, "title": "Career Guidance Seminar", "description": "Guidance on internships, placements and higher studies from invited speakers.", "date": "2027-01-23", "category": "Academic", "location": "Seminar Hall" },
+  { "id": 9, "title": "Inter-College Cricket Match", "description": "Friendly cricket fixture between StudentHub teams and visiting colleges.", "date": "2027-01-30", "category": "Sports", "location": "Cricket Ground" },
+  { "id": 10, "title": "Robotics Demo Day", "description": "Live demonstrations of student-built robots and automation projects.", "date": "2027-02-06", "category": "Technical", "location": "Engineering Block" },
+  { "id": 11, "title": "Art and Photography Contest", "description": "Showcase paintings and photographs around the theme of campus life.", "date": "2027-02-13", "category": "Cultural", "location": "Art Gallery" },
+  { "id": 12, "title": "Blood Donation Camp", "description": "Voluntary blood donation drive organised with the student welfare cell.", "date": "2027-02-20", "category": "Community", "location": "Health Centre" },
+  { "id": 13, "title": "Guest Lecture: AI in Education", "description": "An invited talk on how artificial intelligence is changing learning.", "date": "2027-02-27", "category": "Academic", "location": "Seminar Hall" },
+  { "id": 14, "title": "Music Night", "description": "An evening of performances by the college music club and guest artists.", "date": "2027-03-06", "category": "Cultural", "location": "Open Air Theatre" },
+  { "id": 15, "title": "Football Trials", "description": "Open trials for the college football team for the new semester.", "date": "2027-03-13", "category": "Sports", "location": "Football Field" },
+  { "id": 16, "title": "Campus Cleanliness Drive", "description": "Volunteers join faculty to keep the campus green and litter-free.", "date": "2027-03-20", "category": "Community", "location": "Main Gate Assembly Point" }
+]
