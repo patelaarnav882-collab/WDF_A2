@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Register as a student on StudentHub">
+
+  <title>Student Registration | StudentHub</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+
+      <div class="brand">
+        <img src="../images/logo.png" alt="StudentHub logo">
+        <h1>StudentHub</h1>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="events.html">Events</a>
+          </li>
+
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+
+          <li>
+            <a href="register.html" aria-current="page">
+              Register
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Registration Hero -->
+    <section class="register-hero">
+      <div class="container">
+
+        <p class="eyebrow">STUDENT REGISTRATION</p>
+
+        <h2>Create Your StudentHub Account</h2>
+
+        <p>
+          Register as a student and stay connected with your
+          campus events, resources and student community.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- Registration Section -->
+    <section class="register-section">
+      <div class="container">
+
+        <div class="register-layout">
+
+          <!-- Registration Information -->
+          <div class="register-info">
+
+            <p class="eyebrow">GET STARTED</p>
+
+            <h2>Join StudentHub</h2>
+
+            <p>
+              Create your StudentHub account to access useful
+              student services and stay updated with campus life.
+            </p>
+
+
+            <div class="register-benefits">
+
+              <div class="register-benefit">
+                <span>✓</span>
+                <div>
+                  <h3>Stay Connected</h3>
+                  <p>
+                    Keep up with important campus information
+                    and announcements.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="register-benefit">
+                <span>✓</span>
+                <div>
+                  <h3>Discover Events</h3>
+                  <p>
+                    Find cultural, technical and sports events
+                    happening on campus.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="register-benefit">
+                <span>✓</span>
+                <div>
+                  <h3>Access Resources</h3>
+                  <p>
+                    Find useful academic and student support
+                    resources.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Registration Form -->
+          <div class="register-form-card">
+
+            <div class="register-form-heading">
+
+              <h2>Student Registration</h2>
+
+              <p>
+                Fill in your details to create an account.
+              </p>
+
+            </div>
+
+
+            <form action="#" method="post">
+
+              <!-- Full Name -->
+              <div class="form-group">
+
+                <label for="full-name">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full_name"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Student ID -->
+              <div class="form-group">
+
+                <label for="student-id">
+                  Student ID
+                </label>
+
+                <input
+                  type="text"
+                  id="student-id"
+                  name="student_id"
+                  placeholder="Enter your student ID"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Email -->
+              <div class="form-group">
+
+                <label for="email">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Phone -->
+              <div class="form-group">
+
+                <label for="phone">
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Course -->
+              <div class="form-group">
+
+                <label for="course">
+                  Course / Program
+                </label>
+
+                <select
+                  id="course"
+                  name="course"
+                  required
+                >
+
+                  <option value="">
+                    Select your course
+                  </option>
+
+                  <option value="bca">
+                    Bachelor of Computer Applications
+                  </option>
+
+                  <option value="bba">
+                    Bachelor of Business Administration
+                  </option>
+
+                  <option value="bcom">
+                    Bachelor of Commerce
+                  </option>
+
+                  <option value="bsc">
+                    Bachelor of Science
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <!-- Semester -->
+              <div class="form-group">
+
+                <label for="semester">
+                  Semester
+                </label>
+
+                <select
+                  id="semester"
+                  name="semester"
+                  required
+                >
+
+                  <option value="">
+                    Select semester
+                  </option>
+
+                  <option value="1">Semester 1</option>
+                  <option value="2">Semester 2</option>
+                  <option value="3">Semester 3</option>
+                  <option value="4">Semester 4</option>
+                  <option value="5">Semester 5</option>
+                  <option value="6">Semester 6</option>
+                  <option value="7">Semester 7</option>
+                  <option value="8">Semester 8</option>
+
+                </select>
+
+              </div>
+
+
+              <!-- Password -->
+              <div class="form-group">
+
+                <label for="password">
+                  Password
+                </label>
+
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Create a password"
+                  autocomplete="new-password"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Confirm Password -->
+              <div class="form-group">
+
+                <label for="confirm-password">
+                  Confirm Password
+                </label>
+
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm_password"
+                  placeholder="Confirm your password"
+                  autocomplete="new-password"
+                  required
+                >
+
+              </div>
+
+
+              <!-- Terms -->
+              <div class="register-checkbox">
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    required
+                  >
+
+                  <span>
+                    I agree to the StudentHub terms and conditions.
+                  </span>
+
+                </label>
+
+              </div>
+
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="btn register-submit"
+              >
+                Create Student Account
+              </button>
+
+
+              <!-- Login Link -->
+              <p class="register-login">
+                Already have an account?
+                <a href="student-login.html">
+                  Login here
+                </a>
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Help Section -->
+    <section class="register-help">
+      <div class="container">
+
+        <div class="register-help-card">
+
+          <h2>Need Help?</h2>
+
+          <p>
+            If you have questions about registration,
+            our support team can help you.
+          </p>
+
+          <a href="contact.html" class="btn btn-outline">
+            Contact StudentHub
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div class="footer-column">
+
+          <h2>StudentHub</h2>
+
+          <p>
+            Your campus. Your community. Your hub.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h3>Student</h3>
+
+          <ul>
+            <li>
+              <a href="student-login.html">
+                Student Login
+              </a>
+            </li>
+
+            <li>
+              <a href="register.html">
+                Register
+              </a>
+            </li>
+
+            <li>
+              <a href="events.html">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="resources.html">
+                Resources
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h3>Support</h3>
+
+          <ul>
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <a href="faq.html">
+                FAQ
+              </a>
+            </li>
+
+            <li>
+              <a href="feedback.html">
+                Feedback
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          &copy; 2026 StudentHub. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

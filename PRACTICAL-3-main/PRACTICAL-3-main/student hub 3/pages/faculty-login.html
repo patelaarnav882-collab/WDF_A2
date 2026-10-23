@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Login - StudentHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container">
+
+        <div class="brand">
+            <img src="../images/logo.png" alt="StudentHub logo">
+            <h1>StudentHub</h1>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" aria-current="page">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="form-card">
+
+                <h2>Faculty Login</h2>
+
+                <p>
+                    Login to access your FacultyHub dashboard.
+                </p>
+
+                <!-- Practical 3: Static page navigation -->
+                <form action="faculty-dashboard.html" method="get">
+
+                    <div class="form-group">
+                        <label for="faculty-id">Faculty ID</label>
+                        <input
+                            type="text"
+                            id="faculty-id"
+                            name="faculty_id"
+                            placeholder="Enter your Faculty ID"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="faculty-password">Password</label>
+                        <input
+                            type="password"
+                            id="faculty-password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn">
+                            Login
+                        </button>
+                    </div>
+
+                </form>
+
+
+                <p>
+                    <a href="login.html">← Back to Login Options</a>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
