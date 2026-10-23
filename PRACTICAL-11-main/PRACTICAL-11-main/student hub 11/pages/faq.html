@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ | StudentHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Practical 4: restore saved theme before first paint -->
+    <script>try{var s=localStorage.getItem("studentHubTheme");if(s==="dark"){document.body.classList.add("dark-mode");}}catch(e){}</script>
+
+    <!-- Skip link -->
+    <a href="#main" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="brand">
+
+                <img
+                    src="../images/logo.png"
+                    alt="StudentHub logo"
+                >
+
+                <h1>StudentHub</h1>
+
+            </div>
+
+
+
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">🌙</span><span class="theme-label visually-hidden">Dark mode</span></button>
+
+            <nav id="mainNav" aria-label="Main navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html" aria-current="page">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main id="main">
+
+
+        <!-- =================================================
+             FAQ HERO
+             ================================================= -->
+
+        <section class="faq-hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    STUDENTHUB FAQ
+                </p>
+
+                <h2>
+                    Frequently Asked Questions
+                </h2>
+
+                <p class="faq-hero-text">
+                    Find answers to common questions about
+                    StudentHub, student services, events and
+                    your account.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GETTING STARTED
+             ================================================= -->
+
+        <!-- =================================================
+             BROWSE ALL QUESTIONS (Practical 6)
+             Questions load from faqs.json. Search, filter,
+             sort and move between pages. Tap a question
+             to open or close its answer.
+             ================================================= -->
+
+        <section class="section faq-section">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    BROWSE QUESTIONS
+                </p>
+
+                <h2>
+                    Search StudentHub Questions
+                </h2>
+
+
+                <!-- Practical 6: search, filter and sort controls -->
+                <div class="data-controls">
+
+                    <div class="data-control">
+                        <label for="faqSearch">
+                            Search questions
+                        </label>
+                        <input
+                            type="search"
+                            id="faqSearch"
+                            name="faq-search"
+                            placeholder="Search questions or answers"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="data-control">
+                        <label for="faqCategory">
+                            Category
+                        </label>
+                        <select id="faqCategory" name="faq-category">
+                            <option value="">All categories</option>
+                        </select>
+                    </div>
+
+                    <div class="data-control">
+                        <label for="faqSort">
+                            Sort by
+                        </label>
+                        <select id="faqSort" name="faq-sort">
+                            <option value="default">Default order</option>
+                            <option value="question-az">Question: A to Z</option>
+                            <option value="question-za">Question: Z to A</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <p
+                    class="data-status"
+                    id="faqStatus"
+                    role="status"
+                    hidden
+                ></p>
+
+
+                <p
+                    class="data-count"
+                    id="faqCount"
+                    aria-live="polite"
+                ></p>
+
+
+                <!-- Practical 6: questions render here from faqs.json -->
+                <div class="faq-grid" id="faqGrid"></div>
+
+
+                <p
+                    class="data-empty"
+                    id="faqEmpty"
+                    role="status"
+                    hidden
+                >
+                    No questions match your search. Try a
+                    different keyword or category.
+                </p>
+
+
+                <!-- Practical 6: pagination -->
+                <div class="pagination">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="faqPrev"
+                    >
+                        Previous
+                    </button>
+
+                    <span
+                        class="page-info"
+                        id="faqPageInfo"
+                        aria-live="polite"
+                    >
+                        Page 1 of 1
+                    </span>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="faqNext"
+                    >
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =================================================
+             FINAL CTA
+             ================================================= -->
+
+        <section class="section faq-cta">
+
+            <div class="container">
+
+                <h2>
+                    Still Have Questions?
+                </h2>
+
+                <p>
+                    We are here to help you get the most out
+                    of StudentHub.
+                </p>
+
+
+                <div class="faq-cta-buttons">
+
+                    <a href="contact.html" class="btn">
+                        Contact Us
+                    </a>
+
+                    <a href="register.html" class="btn btn-outline">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    StudentHub
+                </h3>
+
+                <p>
+                    Your campus. Your community. Your hub.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Student Support
+                </h3>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="feedback.html">
+                    Feedback
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 StudentHub
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="../js/script.js"></script>
+<!-- Practical 6: Fetch API data browser -->
+<script src="../js/data.js"></script>
+</body>
+
+</html>
